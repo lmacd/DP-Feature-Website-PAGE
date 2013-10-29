@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>A Daily Pennsylvanian Feature Piece</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/webstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylsheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.thedp.com/">The Daily Pennsylvanian</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Content <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-header">In-Print Articles</li>
+                <li class = "divider"></li>
+                <li><a href="stories.html">The Stories</a></li>
+                <li><a href="data.html">The Data</a></li>
+                <li><a href="ArticleSample.html">Day 2 Article</a></li>
+                <li><a href="ArticleSample.html">Day 3 Article</a></li>
+                <li><a href="ArticleSample.html">Day 4 Article</a></li>
+                <li class = "divider"></li>
+                <li class="nav-header">Online Exclusives</li>
+                <li class = "divider"></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="ArticleSample.html">Map and Additional Data</a></li>
+                <li><a href="ArticleSample.html">Ivy+ Roundup</a></li>
+                <li><a href="ArticleSample.html">High-Profile Litigation College Cases</a></li>
+                <li><a href="ArticleSample.html">Discussion Forum</a></li>
+              </ul>
+            </li>    
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+    <a NAME="graph"></a>
+    <section class="introPage" data-panel="gph" style="background-image: url('img/background.jpg'); background-size: 100% 100%;"> 
+      
+      <div class = "jumbotron">
+        <div class = "container">
+          <h2>The Daily Pennsylvanian: Feature Webpage</h2>
+          <p>A Daily Pennsylvanian feature piece focusing on sexual assault on campus.</p>
+        </div>
+      </div>
+
+     </section> 
+
+    <section class="graph_demo" data-panel="gph"> 
+      
+      <h2>Content of the Feature Website</h2>
+      
+      <div class = "row">
+        <div class = "col-md-6">
+          <div class = "panel panel-default">
+            <h3> Day One</h3>
+            <p>Summary of day one articles.</p>
+            <h3> Day Two</h3>
+            <p>Summary of day two articles.</p>
+            <h3> Day Three</h3>
+            <p>Summary of day three articles.</p>
+            <h3> Day Four</h3>
+            <p>Summary of day four articles.</p>
+            <h3>Online Exclusives</h3>
+            <p>Summary of online-only content.</p>
+          </div>  
+        </div>
+        <div class = "col-md-6">
+            <div class = "panel panel-default">
+              <h3> Day One</h3>
+              <p>Summary of day one articles.</p>
+              <h3> Day Two</h3>
+              <p>Summary of day two articles.</p>
+              <h3> Day Three</h3>
+              <p>Summary of day three articles.</p>
+              <h3> Day Four</h3>
+              <p>Summary of day four articles.</p>
+              <h3>Online Exclusives</h3>
+              <p>Summary of online-only content.</p>
+            </div>  
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://raw.github.com/twbs/bootstrap/master/js/dropdown.js"></script>
+    <script src="http://raw.github.com/guidobouman/jquery-panelsnap/master/jquery.panelSnap.js"></script>
+    <script>
+      // Basic demo
+      $('body').panelSnap({
+        directionThreshold: 200,
+        slideSpeed: 700,
+        onSnapStart: function() {
+          $('section').css("overflow", "hidden");
+        },
+        onSnapFinish: function() {
+          $('section').css("overflow", "scroll");
+        }
+      });
+
+    </script>
+  </body>
+</html>

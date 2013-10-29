@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>An Article:: A DP Feature Article</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/webstyle.css" rel="stylesheet" type="text/css"/>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.thedp.com/">The Daily Pennsylvanian</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Content <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-header">In-Print Articles</li>
+                <li class = "divider"></li>
+                <li><a href="stories.html">The Stories</a></li>
+                <li><a href="data.html">The Data</a></li>
+                <li><a href="ArticleSample.html">Day 2 Article</a></li>
+                <li><a href="ArticleSample.html">Day 3 Article</a></li>
+                <li><a href="ArticleSample.html">Day 4 Article</a></li>
+                <li class = "divider"></li>
+                <li class="nav-header">Online Exclusives</li>
+                <li class = "divider"></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="ArticleSample.html">Map and Additional Data</a></li>
+                <li><a href="ArticleSample.html">Ivy+ Roundup</a></li>
+                <li><a href="ArticleSample.html">High-Profile Litigation College Cases</a></li>
+                <li><a href="ArticleSample.html">Discussion Forum</a></li>
+              </ul>
+            </li>    
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <a NAME="graph"></A>
+
+    <section class="graph_demo" data-panel="gph"> 
+      
+      <h2>Phishing scheme targets Penn</h2>
+      <h4>by Sarah Smith</h4>
+      
+      <div class = "text">
+        <p>Approximately a dozen PennKey holders were affected by a phishing scheme designed to extract personal information that has been circulating over email in the past few days.</p>
+
+        <p>The scheme -- detailed in an email from Information Systems Computing looks similar to a secure Penn login screen. It asks for users' PennKey, password, date of birth and Social Security number.</p>
+
+        <p>ISC keeps a sample list on its website of confirmed email messages targeting Penn services, or posing particularly large risk. As of press time, there have already been four this month and just under 50 in 2013. The emails subject lines range from Letter from the University of Pennsylvania: Penn to University Web Alert! to Password Validation.</p>
+
+          <div class = "gallery" id = "graphs">
+          <div class="menu">
+            <a href="" data-panel="firstGraph" class="active">
+              A Graph
+            </a>
+            <a href="" data-panel="secondGraph">
+              Another Graph
+            </a>
+            <a href="" data-panel="thirdGraph">
+              New Graph
+            </a>
+          </div>
+          <div class="panels">
+            <section data-panel="firstGraph">
+              <img src="img/graph.png">
+            </section>
+            <section data-panel="secondGraph">
+              <img src="img/graph.png">
+            </section>
+            <section data-panel="thirdGraph">
+              <img src="img/graph.png">
+            </section>
+          </div>
+        </div>
+
+        <p>ISC's email instructs those who receive an email with a link to the phishing form to close their browsers and send the link to ISC's office. Those who already received the email and entered their actual information should immediately change their PennKey password and inform ISC.</p>
+
+        <p>University Information Security Officer Joshua Beeman said ISC has several programs in place to protect Penn affiliates against these phishing schemes. The office is piloting a service called SafeDNS that would proactively stop participating computers and offices from accessing websites ISC knows to be problems.</p>
+
+        <p>If we know a phisher is using a website to collect information, we can often add their domain to the list of sites that SafeDNS blocks, he said. That was the case for this phishing attempt. Those organizations participating in the pilot would have been protected from this attack after the phishers domain was added to ISCs list.</p>
+
+        <p>ISC already uses an Intrusion Detection System to monitor for pre-defined patterns of bad traffic, which then sends an alert to ISC if it finds the pattern. This time, a rule was created to alert ISC if Penn user credentials were being sent to an attackers website.</p>
+
+        <p>If ISC is able to identify any information that makes a criminal prosecution possible, Beeman added, then they will work closely with law enforcement. However, the sheer magnitude of phishing schemes and systems makes it nearly impossible to identify any individual or group of specific phishers.</p>
+
+        <p>“The attackers are trying to gain credentials that would allow them specific access to Penn applications such as My Tax and My Pay, possibly for identity theft as well as to have your paychecks sent to another banking account you don't own,” warned ISCs email.</p>
+
+        <p>Anyone who receives the scam email or is unsure about whether an email they receive is legitimate is encouraged to contact ISC at security@isc.upenn.edu.</p>
+      </div>
+    </section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://raw.github.com/twbs/bootstrap/master/js/dropdown.js"></script>
+    <script src="http://raw.github.com/guidobouman/jquery-panelsnap/master/jquery.panelSnap.js"></script>
+    <script>
+      // Graph demo
+      $('#graphs .panels').panelSnap({
+        $menu: $('#graphs .menu'),
+        slideSpeed: 700
+      });
+    </script>
+  </body>
+</html>
